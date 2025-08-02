@@ -28,7 +28,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -54,16 +54,32 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  h1 {
+    @apply text-h1 dark:text-secondary-100 first-letter:capitalize;
   }
+  h2 {
+    @apply text-h2 dark:text-secondary-100 first-letter:capitalize;
+  }
+  h3 {
+    @apply text-h3 dark:text-secondary-100 first-letter:capitalize;
+  }
+  h4 {
+    @apply text-h4 dark:text-secondary-100 first-letter:capitalize;
+  }
+  h5 {
+    @apply text-h5 dark:text-secondary-100 first-letter:capitalize;
+  }
+  h6 {
+    @apply text-h6 dark:text-secondary-100 first-letter:capitalize;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground; */
+    color: black;
   }
 }
-
