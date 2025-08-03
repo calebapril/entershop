@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { SignInButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
         <h4>Typography H4</h4>
         <h5>Typography H5</h5>
         <h6>Typography H6</h6>
+
+
+        <SignInButton/>
       </div>
     </>
   );
