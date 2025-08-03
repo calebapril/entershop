@@ -8,6 +8,16 @@ export default function Provider({ children }: { children: React.ReactNode }) {
     <ClerkProvider
       signInUrl={`${process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL}`}
       signUpUrl={`${process.env.NEXT_PUBLIC_CLERK_SIGN_UP_URL}`}
+      afterSignOutUrl="/"
+      signInFallbackRedirectUrl="/stores"
+      signUpFallbackRedirectUrl="/stores"
+      appearance={{
+        layout: {
+          logoImageUrl: "/byprice.svg",
+          socialButtonsPlacement: "bottom",
+          socialButtonsVariant: "blockButton",
+        },
+      }}
     >
       {children}
     </ClerkProvider>
